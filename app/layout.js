@@ -9,9 +9,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const divStyle = {
+    backgroundColor: "red",
+  };
   return (
     <html lang="en">
-      <body className={inter.className + "bg-red"}>{children}</body>
+      <body style={divStyle} className={inter.className}>
+        {children}
+      </body>
     </html>
   );
 }
